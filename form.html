@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Recipe - Malaysia Eats</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .nav-link {
+            color: black !important;
+            font-weight: 500;
+        }
+    </style>
+</head>
+    <body style="background-color:  #E2F1E7;">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="nav justify-content-center"> <!-- Adjusted this line to align items in a row -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="local.html">Culture</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container py-4">
+        <h1 class="h3 mb-4">Share Your Recipe</h1>
+        
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <!-- Basic Information -->
+                    <div class="mb-3">
+                        <label class="form-label">Recipe Name*</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <!-- Cuisine Type -->
+                    <div class="mb-3">
+                        <label class="form-label">Cuisine Type*</label>
+                        <select class="form-select" required>
+                            <option value="">Select cuisine type</option>
+                            <option>Malay Traditional</option>
+                            <option>Chinese Malaysian</option>
+                            <option>Indian Malaysian</option>
+                            <option>Peranakan</option>
+                            <option>Fusion</option>
+                        </select>
+                    </div>
+
+                    <!-- Difficulty Level -->
+                    <div class="mb-3">
+                        <label class="form-label">Difficulty Level*</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="difficulty" id="easy">
+                            <label class="form-check-label" for="easy">Easy</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="difficulty" id="medium">
+                            <label class="form-check-label" for="medium">Medium</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="difficulty" id="hard">
+                            <label class="form-check-label" for="hard">Hard</label>
+                        </div>
+                    </div>
+
+                    <!-- Cooking Time -->
+                    <div class="mb-3">
+                        <label class="form-label">Cooking Time (minutes)*</label>
+                        <input type="number" class="form-control" required>
+                    </div>
+
+                    <!-- Main Ingredients -->
+                    <div class="mb-3">
+                        <label class="form-label">Main Ingredients</label>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rice">
+                                    <label class="form-check-label" for="rice">Rice</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="noodles">
+                                    <label class="form-check-label" for="noodles">Noodles</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="seafood">
+                                    <label class="form-check-label" for="seafood">Seafood</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="meat">
+                                    <label class="form-check-label" for="meat">Meat</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Photo -->
+                    <div class="mb-3">
+                        <label class="form-label">Recipe Photo</label>
+                        <input type="file" class="form-control" accept="image/*">
+                    </div>
+
+                    <!-- Cooking Instructions -->
+                    <div class="mb-3">
+                        <label class="form-label">Cooking Instructions*</label>
+                        <textarea class="form-control" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Share Recipe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

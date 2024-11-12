@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Map Explorer - Malaysia Eats</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-link {
+            color: black !important;
+            font-weight: 500;
+        }
+    </style>
+</head>
+    <body style="background-color:  #E2F1E7;"> 
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <ul class="nav justify-content-around"> <!-- Adjusted this line for evenly spaced items -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="local.html">Culture</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container-fluid p-0">
+        <!-- Map Header -->
+        <div class="bg-dark text-white p-3">
+            <h1 class="h4 mb-0">Food Map Explorer</h1>
+        </div>
+
+        <!-- Filters -->
+        <div class="p-3 bg-light border-bottom">
+            <div class="row g-2">
+                <div class="col">
+                    <select class="form-select">
+                        <option>All Cuisines</option>
+                        <option>Malay</option>
+                        <option>Chinese</option>
+                        <option>Indian</option>
+                        <option>Peranakan</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select">
+                        <option>All States</option>
+                        <option>Penang</option>
+                        <option>Melaka</option>
+                        <option>Sarawak</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="ratio ratio-4x3 mx-auto" style="max-width: 100%; height: auto;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.575616291222!2d100.50710357453849!3d6.4484932240313695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304cae152c08f777%3A0x76d78a9b0a4b933d!2sUniversiti%20Utara%20Malaysia!5e0!3m2!1sen!2smy!4v1731171755244!5m2!1sen!2smy"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <!-- Nearby Locations -->
+        <div class="p-3">
+            <h2 class="h5 mb-3">Nearby Food Spots</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Food Spot</th>
+                        <th>Distance</th>
+                        <th>Description</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#">Jalan Alor Food Street</a></td>
+                        <td>0.5 km</td>
+                        <td>Famous street food haven in KL</td>
+                        <td><small class="text-muted">⭐ 4.5 (2,345 reviews)</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Lot 10 Hutong</a></td>
+                        <td>0.8 km</td>
+                        <td>Heritage street food court</td>
+                        <td><small class="text-muted">⭐ 4.3 (1,892 reviews)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
